@@ -8,5 +8,17 @@
   <groupId>com.martinkramer.t9t</groupId>
   <artifactId>demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
   <name>T9T Demo</name>
+
+  <modules>
+  <module>t9t-demo-ui-war</module>
+  <module>t9t-demo-settings</module>
+  </modules>
+
+  <properties>
+        <t9t.version>3.4-SNAPSHOT</t9t.version>
+        <fortytwo-ui.version>4.4-SNAPSHOT</fortytwo-ui.version>
+  </properties>
+
 </project>

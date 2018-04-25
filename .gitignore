@@ -58,3 +58,5 @@ docker\.log
 test\.log
 
 log/
+
+vendor/

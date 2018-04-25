@@ -1,0 +1,48 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e0593a8d6e933dd1ce4fb2d27d8aada2",
+    "packages": [
+        {
+            "name": "arvatosystems/fortytwo-ui",
+            "version": "4.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:Arvato-Systems/fortytwo-ui.git",
+                "reference": "master"
+            },
+            "type": "library"
+        },
+        {
+            "name": "arvatosystems/global",
+            "version": "2.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:Arvato-Systems/global.git",
+                "reference": "master"
+            },
+            "type": "library"
+        },
+        {
+            "name": "arvatosystems/t9t",
+            "version": "3.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:Arvato-Systems/t9t.git",
+                "reference": "master"
+            },
+            "type": "library"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
