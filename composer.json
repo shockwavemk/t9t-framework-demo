@@ -1,0 +1,66 @@
+{
+  "name": "martinkramer/t9tdemo",
+  "description": "Demo for t9t standalone",
+  "keywords": [
+    "framework",
+    "t9t",
+    "java"
+  ],
+  "license": "Apache-2.0",
+  "type": "project",
+  "require": {
+    "arvatosystems/global": "*",
+    "arvatosystems/t9t": "*",
+    "arvatosystems/fortytwo-ui": "*"
+  },
+  "require-dev": {
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "cd ./vendor/arvatosystems/global && mvn -U clean install -Duser.timezone=UTC -DskipTests",
+      "cd ./vendor/arvatosystems/t9t && mvn -U clean install -Duser.timezone=UTC -DskipTests",
+      "cd ./vendor/arvatosystems/fortytwo-ui && mvn -U clean install -Duser.timezone=UTC -DskipTests"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "arvatosystems/global",
+        "version": "2.2",
+        "source": {
+          "url": "git@github.com:Arvato-Systems/global.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "arvatosystems/t9t",
+        "version": "3.4",
+        "source": {
+          "url": "git@github.com:Arvato-Systems/t9t.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "arvatosystems/fortytwo-ui",
+        "version": "4.4",
+        "source": {
+          "url": "git@github.com:Arvato-Systems/fortytwo-ui.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ],
+  "config": {
+    "process-timeout": 100000
+  }
+}

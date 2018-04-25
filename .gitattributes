@@ -1,0 +1,10 @@
+# after a lot of annoying CRLF / LF conversion messages after the latest mechanic plugin update, it looks like a central setting for the repository is required
+# this file created based on:
+# http://stackoverflow.com/questions/170961/whats-the-best-crlf-handling-strategy-with-git
+# https://help.github.com/articles/dealing-with-line-endings
+*	text=auto
+*.java	text eol=lf
+*.xtend	text eol=lf
+*.xml	text eol=lf
+*.bon	text eol=lf
+*.bddl	text eol=lf

@@ -1,0 +1,60 @@
+# Common
+*~
+*.bkp
+*.bak
+*.o
+*.a
+
+# Docker
+.env
+
+# Project files
+work/
+files/*
+!files/camel/
+files/camel/*
+!files/camel/camelEndpoints.properties
+deployment/
+
+# Java Package Files
+*.class
+*.war
+*.ear
+*.zip
+*.jar
+
+# generated files within XText / XTend projects
+src-gen/
+xtend-gen/
+src/main/xtend-gen/
+test-output/
+
+# xtend .trace files
+*._trace
+
+# Eclipse project files
+**/.classpath
+**/.project
+**/.settings
+**/.checkstyle
+**/.metadata
+.project
+.classpath
+.settings
+
+# IntelliJ
+.idea
+*.iml
+**/*.iml
+
+# Maven target directories
+target/
+
+generated/
+*._trace
+
+docker\.log
+
+test\.log
+
+log/
