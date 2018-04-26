@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<T9tServerConfiguration xmlns="http://arvatosystems.com/schema/t9t_cfg_be.xsd">
+    <persistenceUnitName>t9t-DS</persistenceUnitName>
+    <databaseConfiguration>
+        <!-- The following is used to set hibernate.dialect resp. eclipselink.target-database to the correct value. -->
+        <databaseBrand>POSTGRES</databaseBrand>
+
+        <jdbcDriverClass>org.postgresql.Driver</jdbcDriverClass>
+        <jdbcConnectString>jdbc:postgresql://db:5432/dbdevdsl01</jdbcConnectString>
+        <username>dbdevdsl01</username>
+        <password>demo123!</password>
+    </databaseConfiguration>
+    <serverConfiguration>
+        <filesystemPathRoot>/usr/local/share</filesystemPathRoot>
+        <jcaBridge>true</jcaBridge>
+    </serverConfiguration>
+    <applicationConfiguration>
+        <workerPoolSize>40</workerPoolSize>
+    </applicationConfiguration>
+    <disableScheduler>false</disableScheduler>
+</T9tServerConfiguration>

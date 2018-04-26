@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+
+    ui:
+        image: jetty:latest
+        ports:
+            - 80:8080
+            - 443:8443
+            - 5006:5005
+        volumes:
+            - ./t9t-demo-ui-war/target/t9t-demo-ui.war:/var/lib/jetty/webapps/t9t-demo-ui.war
+            - ./t9t-demo-ui-war/t9t-demo-ui.xml:/var/lib/jetty/webapps/t9t-demo-ui.xml
+

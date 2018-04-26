@@ -7,42 +7,43 @@
     <relativePath>../t9t-demo-settings-ui</relativePath>
   </parent>
   <artifactId>t9t-demo-ui-war</artifactId>
+  <packaging>war</packaging>
 
-    <build>
-        <finalName>t9t-demo-ui</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <fileNameMapping>no-version</fileNameMapping>
-                    <attachClasses>true</attachClasses>
-                    <classesClassifier>classes</classesClassifier>
-                    <webResources>
-                        <resource>
-                            <directory>src/main/webapp</directory>
-                        </resource>
-                    </webResources>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+      <finalName>t9t-demo-ui</finalName>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-war-plugin</artifactId>
+              <configuration>
+                  <failOnMissingWebXml>false</failOnMissingWebXml>
+                  <fileNameMapping>no-version</fileNameMapping>
+                  <attachClasses>true</attachClasses>
+                  <classesClassifier>classes</classesClassifier>
+                  <webResources>
+                      <resource>
+                          <directory>src/main/webapp</directory>
+                      </resource>
+                  </webResources>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.arvato-systems.t9t</groupId>
-            <artifactId>fortytwo-base-ui</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.arvato-systems.t9t</groupId>
-            <artifactId>fortytwo-base-ee</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.arvato-systems.t9t</groupId>
-            <artifactId>fortytwo-screens-ui</artifactId>
-            <type>war</type>
-        </dependency>
-    </dependencies>
+  <dependencies>
+      <dependency>
+          <groupId>com.arvato-systems.t9t</groupId>
+          <artifactId>fortytwo-base-ui</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.arvato-systems.t9t</groupId>
+          <artifactId>fortytwo-base-ee</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.arvato-systems.t9t</groupId>
+          <artifactId>fortytwo-screens-ui</artifactId>
+          <type>war</type>
+      </dependency>
+  </dependencies>
 
 </project>

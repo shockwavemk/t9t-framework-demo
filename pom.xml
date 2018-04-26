@@ -15,6 +15,7 @@
   <module>t9t-demo-ui-war</module>
   <module>t9t-demo-settings</module>
   <module>t9t-demo-settings-ui</module>
+  <module>t9t-demo-server</module>
   </modules>
 
   <properties>

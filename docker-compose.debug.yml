@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+    t9t:
+        ports:
+            - 5008:5005
+        command: java -Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Duser.timezone=UTC -Dvertx.hazelcast.config=/hazelcast.xml -jar /server.jar --cfg /config-persistence.xml --tcpport 8824 --port 8825
+
+
+    db:
+        ports:
+            - 5432:5432

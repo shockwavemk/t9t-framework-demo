@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+
+    t9t:
+        image: openjdk:8-jre-alpine
+        ports:
+            - 8924:8824
+            - 8925:8825
+        volumes:
+            - ./t9t-demo-server/target/t9t-demo-server.jar:/server.jar
+            - ./config/config-persistence.xml:/config-persistence.xml
+            - ./config/hazelcast.xml:/hazelcast.xml
+        command: java -Duser.timezone=UTC -Dvertx.hazelcast.config=/hazelcast.xml -jar /server.jar --cfg /config-persistence.xml --tcpport 8824 --port 8825
+
+
+    db:
+        image: postgres:alpine
+        ports:
+            - 5432:5432
+        volumes:
+            - postgresdata:/var/lib/postgresql/data
+        environment:
+            POSTGRES_DB: dbdevdsl01
+            POSTGRES_USER: dbdevdsl01
+            POSTGRES_PASSWORD: demo123!
+
+    smtp:
+        image: gessnerfl/fake-smtp-server
+        ports:
+            - 25:5025
+
+volumes:
+    postgresdata:
+        driver: local
