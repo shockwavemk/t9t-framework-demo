@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.martinkramer.t9t</groupId>
+    <artifactId>t9t-demo-settings</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../t9t-demo-settings</relativePath>
+  </parent>
+  <artifactId>t9t-demo-settings-ui</artifactId>
+  <packaging>pom</packaging>
+  
+  <properties>
+		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
+		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

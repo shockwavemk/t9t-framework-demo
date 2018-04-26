@@ -2,8 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.martinkramer.t9t</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>t9t-demo-settings-ui</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../t9t-demo-settings-ui</relativePath>
   </parent>
   <artifactId>t9t-demo-ui-war</artifactId>
 
@@ -29,16 +30,17 @@
     </build>
 
     <dependencies>
-        <!-- fortytwo/aroma42 ui-java dependencies -->
         <dependency>
             <groupId>com.arvato-systems.t9t</groupId>
             <artifactId>fortytwo-base-ui</artifactId>
         </dependency>
-        
-        <!-- Use war-file from own "screens" project -->
         <dependency>
             <groupId>com.arvato-systems.t9t</groupId>
-            <artifactId>aroma2-diesel-ui-screens</artifactId>
+            <artifactId>fortytwo-base-ee</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.arvato-systems.t9t</groupId>
+            <artifactId>fortytwo-screens-ui</artifactId>
             <type>war</type>
         </dependency>
     </dependencies>
