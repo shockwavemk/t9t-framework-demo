@@ -16,11 +16,15 @@
   <module>t9t-demo-settings</module>
   <module>t9t-demo-settings-ui</module>
   <module>t9t-demo-server</module>
+  <module>t9t-demo-dbsetup</module>
   </modules>
 
   <properties>
         <t9t.version>3.4-SNAPSHOT</t9t.version>
         <fortytwo-ui.version>4.4-SNAPSHOT</fortytwo-ui.version>
+        <db.jdbc-url>jdbc:postgresql://dieseldb:5432/dbdevdsl01</db.jdbc-url>
+        <db.user>dbdevdsl01</db.user>
+        <db.password>demo123!</db.password>
   </properties>
 
 </project>
